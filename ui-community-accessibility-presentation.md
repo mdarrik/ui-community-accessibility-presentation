@@ -1,0 +1,50 @@
+- What is accessibility?
+- Myths & Truths
+    - Just for a few people
+        - 10% is not a few
+        - what about situational or temporary impairments
+        - done correctly, accessibility almost always increases usability for everyone
+        - if we don't die suddenly - we will all have impairments
+    - It's an enhancement and it is hard
+        - visual and functional "enhancements" are what broke it in the first place
+            - Valid HTML is nearly always accessible
+            - CSS can hide or obscure information
+            - JavaScript can really bork everything
+        - ui is hard
+        - starting from a good foundation (HTML and components) creates better and more maintainable ui
+
+- As a web developer, how do I make sure the UI is accessible.
+    - Learning
+        - Principles
+            - POUR
+                - As a human being I want to perceive, operate, and understand the information and
+                functionality of a web page using the software, tools and in the environment that I
+                use to interact with the rest of the web, now and in the future.
+        - Adopt heuristics (rules of thumb/mental models)
+            - If meaning is conveyed visually - can it also be determined programmatically
+                - proximity
+                - contrast
+                - color
+                - images
+                - borders
+                - font or text settings
+            - Can all functionality be accessed via keyboard?
+            - Will it work in any situation that it might be used?
+                - device, browser, screen reader, zoomed in, etc.
+            - First rule of aria is not to use aria except if you must
+        - Most common problems
+            - poor keyboard navigation
+            - lack of visual focus
+            - poor color contrast
+            - keyboard traps
+            - no labels (alt, input label, empty button or links)
+        - Building your own custom widgets
+    - Testing
+        - Accessibility Insights for Web
+            - no (or few) false positives
+            - automated, assisted and manual tests
+            - great docs and reference links
+            - extensive
+    - Remediating/Improving/Iterating
+        - don't just add aria
+        - fully
