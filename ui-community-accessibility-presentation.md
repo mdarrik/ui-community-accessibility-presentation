@@ -1,17 +1,17 @@
-- What is accessibility?
-- Myths & Truths
-    - Just for a few people
-        - 10% is not a few
-        - what about situational or temporary impairments
-        - done correctly, accessibility almost always increases usability for everyone
-        - if we don't die suddenly - we will all have impairments
-    - It's an enhancement and it is hard
-        - visual and functional "enhancements" are what broke it in the first place
-            - Valid HTML is nearly always accessible
-            - CSS can hide or obscure information
-            - JavaScript can really bork everything
-        - ui is hard
-        - starting from a good foundation (HTML and components) creates better and more maintainable ui
+## Accessibility Myths
+1. Myth: I don't have any disabled users
+    - ~20% of the US population has a permanent disability and 12% have a severe disability <!--Keep it centered around disabled people-->
+        - Design and implementation can negatively affect disabled users
+            - Vestibular Issues: Nausea, headaches
+            - Seizures
+            - Physical strain/injury
+            - Frustration/stress
+2. Myth: Accessibility is hard 
+    - This is kind of true, but JavaScript, Backend Development, design, and other things we already do are just as hard.
+        - The major difference is experience + knowledge. 
+    - Semantic, functional HTML is mostly accessible
+        - "Enhancements" using CSS & JS can break/obscure accessible features 
+        - starting with accessibility as a focus will always be easier than trying to add it on to the end of the project. 
 
 - As a web developer, how do I make sure the UI is accessible.
     - Learning
