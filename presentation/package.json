@@ -1,0 +1,17 @@
+{
+  "name": "ui-community-accessibility-presentation-December-2019",
+  "version": "1.0.0",
+  "description": "A presentation overviewing web accessibility, focusing on building up a hueristic for a11y testing. This won't enable you to catch *everything*, but it can get many of the common errors out of the way. ",
+  "main": "index.js",
+  "repository": "https://github.com/mdarrik/ui-community-accessibility-presentation",
+  "author": "Darrik Moberg, Matt Kreiling",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "mdx-deck": "^3.0.13"
+  },
+  "scripts": {
+    "start": "mdx-deck deck.mdx",
+    "build": "mdx-deck build"
+  }
+}
