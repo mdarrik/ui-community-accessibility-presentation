@@ -55,3 +55,88 @@ import {Notes} from 'mdx-deck'
   - Operable
   - Understandable
   - Robust
+
+
+---
+
+# Tooling
+- Accessibility Insights for Web
+   - Chrome/Chromium Edge
+   - Has automated, assisted, and manual test
+   - Extensive
+- [Axe](https://github.com/dequelabs/axe-cli)
+   - CLI & browser Tool for checking common a11y problems
+   - Can be baked into CI/CD pipelines
+   - Not a replacement for manual tests
+
+---
+
+# Keyboard Testing
+
+Everything you can access with your mouse needs to be accessible via keyboard
+
+- Focus Styles
+- Skip Links
+
+
+[someExample](https://example.com)
+
+---
+
+# Color Contrast
+
+- 4.5:1 Normal Text (< 24px, < 19 pixels when bolded )
+- 3:1 Large Text, graphics, and user interface components
+- Links without underlines need 3:1 with body text in addition to above (plus focus/hover styles)
+
+---
+
+
+
+# Zoom & Font Size
+
+## Some users need to zoom or use screen magnifiers
+- Responsive design helps
+- 400% zoom is standard for Testing
+
+## Some users adjust font sizes
+- Use responsive units for font sizes instead of pixels (em/rem)
+- Can test by editing browser settings
+
+---
+
+# Labels & Accessible Names
+
+- Assitive Tech needs to be able to announce content
+- Images need accessibility
+- Buttons and form elements need accessible Names
+  - Not just icons for Buttons
+  - `<Label>` for Form elements with `id`
+  - Only use aria-label when abxsolutely necessary
+- Can add additional information to AT with `aria-describedby`
+
+---
+
+# Aria 
+- Conveys additional meaning to Assistive technology
+- Prefer Semantic HTML over ARIA where possible
+- Is needed for certain custom components (modals, collapsable menus, etc)
+
+---
+
+# Resources
+
+## In Depth Resources
+- [WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/)
+- [WEBAIM](https://webaim.org/)
+
+## Blogs
+- [A11y With Lindsey](https://www.a11ywithlindsey.com/)
+- [Scott O'Hara](https://www.scottohara.me/)
+- [Sara Soueidan](https://www.sarasoueidan.com/blog)
+
+## Talks/Videos
+- [Learn With Jason: Automated & Manual Accessibility Testing w/ Marcy Sutton](https://www.youtube.com/watch?v=IADSsClWVtA&list=PLz8Iz-Fnk_eTpvd49Sa77NiF8Uqq5Iykx)
+- [Accessibility Is Too Hard - Developer Edition](https://www.youtube.com/watch?v=Hfn18nDkyi4)
+- [Accessibility Is a Hydra](https://www.youtube.com/watch?v=SDdsD5AmKYA)
+- [Inclusive Design 24 (24 hour a11y conference)](https://www.youtube.com/playlist?list=PLn7dsvRdQEfFd5n_h8gltIoTfzUE_zywu)
